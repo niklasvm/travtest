@@ -8,5 +8,8 @@ before_install:
 cache:
   packages: true
 
+install:
+  - R -e 'getwd()'
+
 script:
   - Rscript ./tests/run_test.R
