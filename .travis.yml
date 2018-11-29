@@ -3,9 +3,7 @@ language: R
 before_install:
   - sudo apt-get update
   - sudo apt-get install -y libxml2-dev
-
-install:
-  - Rscript -e 'install.packages(c("devtools", "testthat","tidyverse"))'
+  - R -e 'install.packages(c("devtools", "testthat","tidyverse"))'
   
 cache:
   packages: true
